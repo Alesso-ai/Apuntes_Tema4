@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Recorrido Array</title>
+  </head>
+  <body>
+    <h1>Recorrido Array</h1>
+    <script>
+      let sistemaSolar = new Array();
+
+      sistemaSolar[0] = "Mercurio";
+      sistemaSolar[1] = "Venus";
+      sistemaSolar[2] = "Tierra";
+      sistemaSolar[3] = "Marte";
+      sistemaSolar[4] = "Jupiter";
+      sistemaSolar[5] = "Saturno";
+      sistemaSolar[6] = "Urano";
+      sistemaSolar[7] = "Neptuno";
+      sistemaSolar[8] = "Pluton";
+
+      document.write("<strong>Recorrido de un bucle for:</strong><br/>");
+      for (let i = 0; i < sistemaSolar.length; i++) {
+        document.write(sistemaSolar[i] + "<br/>");
+      }
+
+      //Con bucle while
+      document.write("<strong>Recorrido de un bucle while:</strong><br/>");
+      let j = 0;
+      while (j < sistemaSolar.length) {
+        document.write(sistemaSolar[j] + "<br/>");
+        j++;
+      }
+
+      //Recorrido con forEach
+      sistema.solar.array.forEach(planeta => {
+        document.write(planeta + "<br/>");
+      });
+    </script>
+  </body>
+</html>

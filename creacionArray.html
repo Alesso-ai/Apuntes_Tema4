@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creacion Array</title>
+  </head>
+  <body>
+    <h1>Mira la consola
+    <br/>
+        Creacion del array
+    </h1>
+
+    <script>
+        let miArray = new Array();
+
+        //Mirar la longitud del array
+        let longitud = miArray.length;
+
+        //Array con 40 huecos
+        let personas = new Array(40);
+
+        //Hace caso omiso a este y en vez de 40 creados como pone arriba
+        //crea 53 y el resto vacios
+        personas[53] = "Alejandro Ruiz Prieto";
+
+        let nuevaLongitud = personas.length;
+
+        //array de sistema solar
+
+        //Creacion de array a pincho
+        let sistemaSolar = new Array();
+
+        sistemaSolar[0] = "Mercurio";
+        sistemaSolar[1]= "Venus";
+        sistemaSolar[2]= "Tierra";
+        sistemaSolar[3]= "Marte";
+        sistemaSolar[4]= "Jupiter";
+        sistemaSolar[5]= "Saturno";
+        sistemaSolar[6]= "Urano";
+        sistemaSolar[7]= "Neptuno";
+        sistemaSolar[8]= "Pluton";
+
+
+        //O se puede hacer de esta forma mas rapida
+
+        //Creacion de Array mendiante constructor
+        let SistemaSolarLiteral = new Array ("Mercurio","Venus","Tierra","Marte","Jupiter","Saturno","Urano","Neptuno","Pluton");
+
+        //Creacion de array de forma literal
+        let SistemaSolarLitera2 = ["Mercurio","Venus","Tierra","Marte","Jupiter","Saturno","Urano","Neptuno","Pluton"];
+
+        //Otra forma no tan usual de array mixto
+
+        let datos = {
+
+                    "nombre":"Alejandro",
+                    "mes": "Junio",
+                    "estudios": "Informatica",
+                    69:"98"
+                }
+
+                document.write("<br/>" + datos["nombre"] + "--" + datos["mes"]+ "--" + datos["estudios"] + "--" + datos[69] + "<br/>")
+    </script>
+  </body>
+</html>

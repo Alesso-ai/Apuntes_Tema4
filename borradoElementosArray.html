@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Borrado Array</title>
+  </head>
+  <body>
+    <script>
+      let oceanos = new Array("Atlantico", "Pacifico", "Artico", "Indico");
+
+      document.write("<strong>Oceanos antes del borrado: </strong><br/>");
+      for (var i = 0; i < oceanos.length; i++) {
+        document.write(oceanos[i] + "<br/>");
+      }
+      document.write("<br/>");
+      //si quiero borrar un oceano
+      oceanos[2] = null;
+      document.write("<strong>Oceanos despues del borrado: </strong><br/>");
+      for (var i = 0; i < oceanos.length; i++) {
+        document.write(oceanos[i] + "<br/>");
+      }
+      document.write("<br/>");
+      //Usando delete sale undefined
+      delete oceanos[2];
+      document.write("<strong>Oceanos utilizando delete</strong><br/>");
+      for (var i = 0; i < oceanos.length; i++) {
+        document.write(oceanos[i] + "<br/>");
+      }
+      document.write("<br/>");
+
+      //Usando el splice en el array 1 borro el elemento 2
+      oceanos.splice(2, 1);
+      document.write("<strong>Oceanos utilizando delete</strong><br/>");
+      for (var i = 0; i < oceanos.length; i++) {
+        document.write(oceanos[i] + "<br/>");
+      }
+
+      document.write("<br/>");
+      //ForEach
+      document.write("<strong>Oceanos utilizando ForEach</strong><br/>");
+      oceanos.forEach((oceano) => {
+        document.write(oceano + "<br/>");
+      });
+    </script>
+  </body>
+</html>
