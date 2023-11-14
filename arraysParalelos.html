@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Paralelos en JavaScript</title>
+</head>
+<body>
+
+    <script>
+      
+      
+
+        let profesores = ["Cristina", "Catalina", "Vieites", "Benjamin"];
+
+        let asignaturas = ["Seguridad", "Bases de Datos", "Sistemas informaticos"];
+
+        let alumnos = [14, 27, 36, 40]
+
+        function imprimeDatos(indice){
+            document.write("<br/>" + profesores[indice] + " del modulo de " + asignaturas[indice] + ", tiene " + alumnos[indice] + "alumnos en clase.")
+        }
+
+        const imprimeDatosFlecha = indice => {
+            document.write("<br/>" + profesores[indice] + " del modulo de " + asginaturas[indice] + ", tiene" + alumnos[indice] + "alumnos en clase.")
+        }
+
+        document.write("<strong> Informacion de Profesores, Asignaturas y alumnos: </strong><br/>");
+        for(let i = 0; i < profesores.length; i++){
+            imprimeDatos(i)
+            //imprimeDatosFlecha(i)
+        }
+
+    </script>
+    
+</body>
+</html>
